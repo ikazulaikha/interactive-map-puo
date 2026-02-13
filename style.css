@@ -105,4 +105,27 @@ table{
   height: fit-content;
 }
 
+@media (max-width: 1000px) {
+  .main-content {
+    flex-direction: column; /* stack map & table */
+    align-items: center;    /* center map & table */
+    gap: 20px;              /* jarak sikit antara map & table */
+  }
+
+  .map-container {
+    width: 100%;            /* map ikut screen width */
+  }
+
+  .map {
+    width: 100%;
+    height: auto;           /* maintain ratio map */
+  }
+
+  .legend-table {
+    width: 90%;             /* table ikut screen width */
+    margin-top: 10px;
+    overflow-x: auto;       /* scroll kalau table panjang */
+    display: block;
+  }
+}
 
