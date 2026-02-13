@@ -27,7 +27,7 @@ h1 {
 .map {
   width: 900px;
   height: 800px;
-  display: block;
+  max-width: none;
 }
 
 .marker {
@@ -104,4 +104,5 @@ table{
 .legend-table {
   height: fit-content;
 }
+
 
