@@ -36,17 +36,6 @@ h1 {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
-  .map-container {
-    width: 100%;
-  }
-
-  .map {
-    width: 100%;
-    height: auto;
-  }
-}
-
 /* Popup box */
 .popup {
   display: none;
@@ -115,3 +104,4 @@ table{
 .legend-table {
   height: fit-content;
 }
+
