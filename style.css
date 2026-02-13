@@ -1,0 +1,117 @@
+body {
+  background-image: url('images/background_map.png');
+  background-size: cover;        /* penuh screen */
+  background-repeat: no-repeat;  /* jangan ulang */
+  background-position: center;   /* tengah */
+  background-attachment: fixed;
+
+}
+
+h1 {
+  background-color: azure;
+}
+
+.framed-map {
+  border: 6px solid #5f2503;
+  padding: 8px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.map-container {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.map {
+  width: 900px;
+  height: 800px;
+  display: block;
+}
+
+.marker {
+  position: absolute;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .map-container {
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Popup box */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.popup-img {
+  width: 150px;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slider img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.nav {
+  background: #333;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* WARNA DALAM JADUAL */
+tr, td {
+    background-color:#fffff5 ;
+}
+
+/* BINGKAI JADUAL */
+table{
+    background: #000000;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  justify-content: center;
+}
+
+.legend-table {
+  height: fit-content;
+}

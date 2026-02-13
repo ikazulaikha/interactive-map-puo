@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PUO MAP!</title>
+  </head>
+
+  <body>
+<div style="border: 5px double; background-color: azure;">
+
+<div style="text-align: center;">
+  <h1 style="font-family: Comic Sans MS; color: brown;"><img src="https://www.puo.edu.my/webportal/wp-content/uploads/2024/02/puo1.png" width="250" height="80"><br> -- PETA POLITEKNIK UNGKU OMAR --</h1>
+</div>
+
+</div>
+
+<h3 style="font-family: Comic Sans MS;"> click "⚽" to interact. </h3>
+<h3 style="font-family: Comic sans MS;"> click "✖" to close the popup.</h3>
+
+<img src="https://cdn-icons-gif.flaticon.com/17270/17270711.gif" width="80" height="80">
+<br>
+<br>
+
+<div class="main-content">
+
+  <table cellpadding="10" border="1" class="legend-table">
+            <tr>
+                <th style="font-family: Comic Sans MS">SYMBOL</th>
+                <th style="font-family: Comic Sans MS">DESCRIPTION </th>
+            </tr>
+            <tr>
+                <td style="font-family: Comic Sans MS">🏫</td>
+                <td style="font-family: Comic Sans MS"> BANGUNAN </td>
+            </tr>
+            <tr>
+                <td style="font-family: Comic Sans MS">🏠</td>
+                <td style="font-family: Comic Sans MS"> KAMSIS </td>
+            </tr>
+            <tr>
+                <td style="font-family: Comic Sans MS">🍴</td>
+                <td style="font-family: Comic Sans MS"> KAFE/KANTIN </td>
+            </tr>
+            <tr>
+                <td style="font-family: Comic Sans MS">👕</td>
+                <td style="font-family: Comic Sans MS"> DOBI </td>
+            </tr>
+            <tr>
+                <td style="font-family: Comic Sans MS">🔒</td>
+                <td style="font-family: Comic Sans MS"> PAGAR A/PAGAR B </td>
+            </tr>
+            <tr>
+                <td style="font-family: Comic Sans MS">⚽</td>
+                <td style="font-family: Comic Sans MS"> PADANG </td>
+            </tr>
+            <tr>
+                <td style="font-family: Comic Sans MS">🗑️</td>
+                <td style="font-family: Comic Sans MS"> PUSAT KITAR SEMULA </td>
+            </tr>
+            <tr>
+                <td style="font-family: Comic Sans MS">🏍️</td>
+                <td style="font-family: Comic Sans MS"> PARKIR MOTOSIKAL </td>
+            </tr>
+        </table>
+
+<div class="map-container">
+  <img src="images/MAP_PUO1.png" class="map framed-map">
+
+  <div class="marker" style="top:50%; left:40%;" 
+    onclick="showInfo(
+    ['PADANG A'],
+    ['images/PADANG_A.jpeg'],
+    ['Coordinate: 4.588556, 101.121746']
+  )">⚽</div>
+
+  <div class="marker" style="top:62%; left:25%;" 
+    onclick="showInfo(
+    ['GATE KAMSIS PFI','KAMSIS PFI', 'SUNGAI PUO'],
+    ['images/KAMSIS_PUO.jpeg','images/BLOK_DELIMA.jpeg','images/SUNGAI_PUO.jpeg'],
+    ['Coordinate: 4.589250, 101.121683 <br><br> Blok: Delima, Zamrud, Mutiara, Emas, Berlian',
+    'Coordinate: 4.589250, 101.121683 <br><br> Blok: Delima, Zamrud, Mutiara, Emas, Berlian','Coordinate: 4.589250, 101.121683']
+  )">🏠</div>
+
+   <div class="marker" style="top:62%; left:28%;" 
+    onclick="showInfo(
+    ['KAFE KAMSIS'],
+    ['images/KAFE_KAMSIS.jpeg'],
+    ['Coordinate: 4.590094, 101.121398']
+  )">🍴</div>
+
+  <div class="marker" style="top:60%; left:55%;" 
+    onclick="showInfo(
+    ['DEWAN JUBLI PERAK', 'PERPUSTAKAAN TAN SRI OTHMAN'],
+    ['images/DEWAN_JUBLI.jpeg', 'images/PERPUSTAKAAN.jpeg'],
+    ['Coordinate: 4.587361,101.123879', 'Coordinate: 4.587594,101.124453']
+  )">🏫</div>
+
+  <div class="marker" style="top:35%; left: 36%;" 
+    onclick="showInfo(
+    ['PADANG B'],
+    ['images/PADANG_B.jpeg'],
+    ['Coordinate:4.590655, 101.123299']
+  )">⚽</div>
+
+  <div class="marker" style="top:27%; left: 58%;" 
+    onclick="showInfo(
+    ['PAGAR A'],
+    ['images/PAGAR_A.jpeg'],
+    ['Coordinate:4.588934, 101.126036']
+  )">🔒</div>
+
+  <div class="marker" style="top:30%; left: 60%;" 
+    onclick="showInfo(
+    ['PUSAT ISLAM'],
+    ['images/PUSAT_ISLAM.jpeg'],
+    ['Coordinate:4.588642, 101.12696 <br><br> Lelaki, Perempuan']
+  )">🕌</div>
+
+  <div class="marker" style="top:28%; left: 54%;" 
+    onclick="showInfo(
+    ['ANJUNG PREMIER'],
+    ['images/ANJUNG_PRIMIER.jpeg'],
+    ['Coordinate:4.588934, 101.126036']
+  )">🏫</div>
+
+  <div class="marker" style="top:47%; left:57%;" 
+    onclick="showInfo(
+    ['DEWAN WARISAN', 'DATARAN PREMIER'],
+    ['images/DEWAN_WARISAN.jpeg', 'images/DATARAN_PREMIER.jpeg'],
+    ['Coordinate: 4.588118, 101.125179', 'Coordinate:4.588118, 101.125179']
+  )">🏫</div>
+
+  <div class="marker" style="top:50%; left:60%;" 
+    onclick="showInfo(
+    ['PUSAT PELAJAR'],
+    ['images/PUSAT_PELAJAR.jpeg'],
+    ['Coordinate: 4.587566, 101.125130']
+  )">🏫</div>
+  
+
+  <div class="marker" style="top:50%; left:56%;" 
+    onclick="showInfo(
+    ['KANTIN A'],
+    ['images/KANTIN_A.jpeg'],
+    ['Coordinate: 4.587867, 101.124947']
+  )">🍴</div>
+  
+
+  <div class="marker" style="top:80%; left:45%;" 
+    onclick="showInfo(
+    ['JTMK', 'JKE'],
+    ['images/JTMK.jpeg', 'images/JKE.jpeg'],
+    ['Coordinate: 4.588549, 101.124748 <br><br> ARAS 1: Makmal CNW1, Kelab Pelajar, Dewan Kuliah, Makmal CSD, MCT Hub, Bilik Staff <br><br> ARAS 2: Makmal YTM, Bilik Staff Aras 2/3, Unit Peperiksaan, Bilik Staff Aras 2/2, Bilik Staff Aras 2/1, Makmal CNW2 <br><br> ARAS 3: Makmal Hyper 2, Ketua Jabatan, Pejabat, Bilik Staff Aras 3/1A, Bilik Staff Aras 3/1B, Makmal Projek, Bilik Staff Aras 3/2, Bilik Staff Aras 3/3, Bilik Seminar', 'Coordinate: 4.588549, 101.124748']
+  )">🏫</div>
+
+  <div class="marker" style="top:41%; left:23%;" 
+    onclick="showInfo(
+    ['DOBI'],
+    ['images/DOBI.jpeg'],
+    ['Coordinate: 4.589250, 101.121683']
+  )">👕</div>
+
+  <div class="marker" style="top:37%; left:23%;"
+    onclick="showInfo(
+    ['PUSAT KITAR SEMULA'],
+    ['images/PUSAT_KITAR_SEMULA.jpeg'],
+    ['Coordinate: 4.591410, 101.121908']
+  )">🗑️</div>
+
+  <div class="marker" style="top:66%; left:33%;" 
+    onclick="showInfo(
+    ['SURAU DEPAN KAMSIS'],
+    ['images/SURAU_DEPAN_KAMSIS.jpeg'],
+    ['Coordinate: 4.588553, 101.121746 <br><br> Lelaki, Perempuan']
+  )">🕌</div>
+
+  <div class="marker" style="top:36%; left:30%;" 
+    onclick="showInfo(
+    ['UNIT PENGURUSAN PSIKOLOGI','POLYBIZZ MALL'],
+    ['images/UNIT_PENGURUSAN_PSIKOLOGI.jpeg','images/TEMPAT_AMBIL_PARCEL.jpeg'],
+    ['Coordinate: 4.591036, 101.122705', 'Coordinate: 4.592099, 101.122751']
+  )">🏫</div>
+
+  <div class="marker" style="top:38%; left:28%;" 
+    onclick="showInfo(
+    ['KANTIN C'],
+    ['images/KANTIN _C.jpeg'],
+    ['Coordinate: Coordinate: 4.591027, 101.122716']
+  )">🍴</div>
+
+  <div class="marker" style="top:42%; left:52%;" 
+    onclick="showInfo(
+    ['JMSK'],
+    ['images/JMSK.jpeg'],
+    ['Coordinate: 4.588549, 101.124748 <br><br> ARAS 1: BK1, BK23, BK4 <br><br> ARAS 2: Makmal APDV 1, Makmal APDV 4, Makmal APDV 2, Makmal APDV 3 , <br><br> ARAS 3: Makmal IT 1, Makmal IT 2, Makmal IT 3 <br><br> ARAS 4: CGL 1, CGL 2, CGL 3, Makmal CNW 3']
+  )">🏫</div>
+
+  <div class="marker" style="top:25%; left:30%;" 
+    onclick="showInfo(
+    ['PAGAR B'],
+    ['images/PAGAR_B.jpeg'],
+    ['Coordinate: 4.591156, 101.123338']
+  )">🔒</div>
+
+  <div class="marker" style="top:30%; left:26%;" 
+    onclick="showInfo(
+    ['DEWAN SRI KINTA '],
+    ['images/DEWAN_SRI_KINTA.jpeg'],
+    ['Coordinate: 4.591156, 101.123338']
+  )">🏫</div>
+
+  <div class="marker" style="top:40%; left:34%;" 
+    onclick="showInfo(
+    ['JSKK'],
+    ['images/JSKK.jpeg'],
+    ['Coordinate: 4.590573, 101.123169']
+  )">🏫</div>
+
+  <div class="marker" style="top:33%; left: 54%;" 
+    onclick="showInfo(
+    ['PENTADBIRAN'],
+    ['images/PENTADBIRAN .jpeg'],
+    ['Coordinate:4.588935, 101.126035']
+  )">🏫</div>
+
+  <div class="marker" style="top:40%; left: 58%;" 
+    onclick="showInfo(
+    ['JHEP/JKA'],
+    ['images/BANGUNAN_JHEP_JKA.jpeg'],
+    ['Coordinate:4.588229, 101.125813']
+  )">🏫</div>
+
+  <div class="marker" style="top:72%; left:52%;" 
+    onclick="showInfo(
+    ['KANTIN B'],
+    ['images/KANTIN_B.jpeg'],
+    ['Coordinate: 4.587453, 101.123083']
+  )">🍴</div>
+
+  <div class="marker" style="top:64%; left:52%;" 
+    onclick="showInfo(
+    ['JKP'],
+    ['images/JKP.jpeg'],
+    ['Coordinate: 4.587450, 101.123085']
+  )">🏫</div>
+
+  <div class="marker" style="top:46%; left: 46%;" 
+    onclick="showInfo(
+    ['PARKIR MOTOSIKAL'],
+    ['images/PARKIR_MOTOSIKAL.jpeg'],
+    ['Coordinate:4.590655, 101.123299']
+  )">🏍️</div>
+
+</div>
+
+</div>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+  <span class="close" onclick="closePopup()">✖</span>
+
+  <h3 id="title"></h3>
+
+  <div class="slider">
+  <button id="prevBtn" class="nav left" onclick="prevImage()">‹</button>
+  <img id="sliderImage">
+  <button id="nextBtn" class="nav right" onclick="nextImage()">›</button>
+</div>
+
+
+  <p id="desc"></p>
+</div>
+
+<h5 style="font-family: Comic Sans MS; color: rgb(118, 42, 165);"><b> GROUP MEMBERS:</b> <br> NUR ZULAIKHA (01DIT25F1002)<br> NUR FARHANA (01DIT25F1113)<br> BAIDURI BATRISYIA (01DIT25F1081)<br> VAISHNAVI SHREYA (01DIT25F1219)
+</h5>
+
+<script src="script.js"></script>
+
+<script>
+let currentImages = [];
+let currentNames = [];
+let currentDescs = [];
+let currentIndex = 0;
+
+function showInfo(names, images, descs) {
+  currentNames = names;
+  currentImages = images;
+  currentDescs = descs;
+  currentIndex = 0;
+
+  updateContent();
+  document.getElementById("popup").style.display = "block";
+
+  if (currentImages.length > 1) {
+    prevBtn.style.display = "inline-block";
+    nextBtn.style.display = "inline-block";
+  } else {
+    prevBtn.style.display = "none";
+    nextBtn.style.display = "none";
+  }
+}
+
+function updateContent() {
+  document.getElementById("title").innerHTML =
+    currentNames[currentIndex];
+
+  document.getElementById("sliderImage").src =
+    currentImages[currentIndex];
+
+  document.getElementById("desc").innerHTML =
+    currentDescs[currentIndex];
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % currentImages.length;
+  updateContent();
+}
+
+function prevImage() {
+  currentIndex =
+    (currentIndex - 1 + currentImages.length) % currentImages.length;
+  updateContent();
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
