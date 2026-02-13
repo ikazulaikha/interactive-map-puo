@@ -129,3 +129,34 @@ table{
   }
 }
 
+/* Header container */
+div[style*="border: 5px double;"] {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Header h1 text */
+div[style*="border: 5px double;"] h1 {
+  font-family: 'Comic Sans MS', sans-serif;
+  color: brown;
+  font-size: 1.5rem; /* desktop font */
+  margin: 0;
+}
+
+/* Logo di h1 */
+div[style*="border: 5px double;"] h1 img {
+  width: 50%;        /* ikut screen size */
+  max-width: 250px;  /* jangan terlalu besar */
+  height: auto;      /* maintain ratio */
+}
+
+/* Responsive untuk phone */
+@media (max-width: 600px) {
+  div[style*="border: 5px double;"] h1 {
+    font-size: 1.2rem; /* kecil sikit untuk phone */
+  }
+  div[style*="border: 5px double;"] h1 img {
+    width: 70%;  /* ikut screen phone */
+  }
+}
+
