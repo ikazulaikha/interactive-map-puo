@@ -101,10 +101,12 @@ table{
 
 .main-content {
   display: flex;
+  flex-direction: row;    /* table kiri, map kanan */
   align-items: flex-start;
-  gap: 40px;
+  gap: 40px;             /* jarak antara table & map */
   justify-content: center;
 }
+
 
 .legend-table {
   width: fit-content;        /* ikut content table */
@@ -128,11 +130,20 @@ table{
 }
 
 @media (max-width: 1000px) {
-  .map-container {
-    width: 100%;
-    height: auto;  /* auto ikut width phone */
+  .main-content {
+    flex-direction: column; /* table atas, map bawah bila phone */
+    align-items: center;    /* center-kan semua */
+    gap: 20px;              /* jarak antara table & map */
   }
+
+  .map-container {
+    width: 100%;            /* ikut width phone */
+    height: auto;           /* ikut map container */
+  }
+
   .map {
-    height: auto;  /* ikut map-container */
+    width: 100%;            /* ikut map container */
+    height: auto;           /* maintain aspect ratio */
   }
 }
+
