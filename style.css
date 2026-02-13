@@ -20,15 +20,20 @@ h1 {
 
 .map-container {
   position: relative;
-  width: 1000px;
-  margin: 0 auto;
+  width: 900px;   /* size tetap di laptop */
+  height: 800px;  /* height tetap */
 }
 
 .map {
-  width: 900px;
-  height: 800px;
-  max-width: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* maintain map aspect ratio */
+  border-radius: 12px;
+  border: 6px solid #5f2503;
+  background: #fff;
+  padding: 8px;
 }
+
 
 .marker {
   position: absolute;
@@ -102,61 +107,32 @@ table{
 }
 
 .legend-table {
-  height: fit-content;
+  width: fit-content;        /* ikut content table */
+  background-color: #fffff5; /* warna dalam table */
+  border-collapse: collapse; /* buang double border */
+}
+
+.legend-table th,
+.legend-table td {
+  border: 1px solid black;   /* bingkai setiap cell */
+  padding: 8px;
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column; /* table atas, map bawah */
+  align-items: center;    /* center-kan semua */
+  gap: 20px;              /* jarak antara table & map */
 }
 
 @media (max-width: 1000px) {
-  .main-content {
-    flex-direction: column; /* stack map & table */
-    align-items: center;    /* center map & table */
-    gap: 20px;              /* jarak sikit antara map & table */
-  }
-
   .map-container {
-    width: 100%;            /* map ikut screen width */
-  }
-
-  .map {
     width: 100%;
-    height: auto;           /* maintain ratio map */
+    height: auto;  /* auto ikut width phone */
   }
-
-  .legend-table {
-    width: 90%;             /* table ikut screen width */
-    margin-top: 10px;
-    overflow-x: auto;       /* scroll kalau table panjang */
-    display: block;
+  .map {
+    height: auto;  /* ikut map-container */
   }
 }
-
-/* Header container */
-div[style*="border: 5px double;"] {
-  padding: 10px;
-  text-align: center;
-}
-
-/* Header h1 text */
-div[style*="border: 5px double;"] h1 {
-  font-family: 'Comic Sans MS', sans-serif;
-  color: brown;
-  font-size: 1.5rem; /* desktop font */
-  margin: 0;
-}
-
-/* Logo di h1 */
-div[style*="border: 5px double;"] h1 img {
-  width: 50%;        /* ikut screen size */
-  max-width: 250px;  /* jangan terlalu besar */
-  height: auto;      /* maintain ratio */
-}
-
-/* Responsive untuk phone */
-@media (max-width: 600px) {
-  div[style*="border: 5px double;"] h1 {
-    font-size: 1.2rem; /* kecil sikit untuk phone */
-  }
-  div[style*="border: 5px double;"] h1 img {
-    width: 70%;  /* ikut screen phone */
-  }
-}
-
