@@ -101,17 +101,13 @@ table{
 
 .main-content {
   display: flex;
-  flex-direction: row;    /* table kiri, map kanan */
   align-items: flex-start;
-  gap: 40px;             /* jarak antara table & map */
+  gap: 40px;
   justify-content: center;
 }
 
-
 .legend-table {
-  width: fit-content;        /* ikut content table */
-  background-color: #fffff5; /* warna dalam table */
-  border-collapse: collapse; /* buang double border */
+  height: fit-content;
 }
 
 .legend-table th,
@@ -128,4 +124,5 @@ table{
     align-items: center;
   }
 }
+
 
