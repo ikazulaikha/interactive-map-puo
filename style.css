@@ -122,28 +122,10 @@ table{
   font-family: "Comic Sans MS";
 }
 
-.main-content {
-  display: flex;
-  flex-direction: column; /* table atas, map bawah */
-  align-items: center;    /* center-kan semua */
-  gap: 20px;              /* jarak antara table & map */
-}
-
 @media (max-width: 1000px) {
   .main-content {
-    flex-direction: column; /* table atas, map bawah bila phone */
-    align-items: center;    /* center-kan semua */
-    gap: 20px;              /* jarak antara table & map */
-  }
-
-  .map-container {
-    width: 100%;            /* ikut width phone */
-    height: auto;           /* ikut map container */
-  }
-
-  .map {
-    width: 100%;            /* ikut map container */
-    height: auto;           /* maintain aspect ratio */
+    flex-direction: column;
+    align-items: center;
   }
 }
 
