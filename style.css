@@ -98,10 +98,8 @@ table{
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  justify-content: flex-start;
-  padding-left: 60px;
+  justify-content: center;
 }
-
 
 .legend-table {
   height: fit-content;
@@ -121,6 +119,7 @@ table{
     align-items: center;
   }
 }
+
 
 
 
