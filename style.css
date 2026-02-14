@@ -20,20 +20,22 @@ h1 {
 
 .map-container {
   position: relative;
-  width: 900px;   /* size tetap di laptop */
-  height: auto;  
+  width: 900px;
+  height: auto;
+  border: 6px solid #5f2503;
+  padding: 8px;
+  background: #fff;
+  border-radius: 12px;
 }
+
 
 .map {
   width: 100%;
   height: auto;
-  diplay: block;
-  object-fit: cover; /* maintain map aspect ratio */
+  display: block;
   border-radius: 12px;
-  border: 6px solid #5f2503;
-  background: #fff;
-  padding: 8px;
 }
+
 
 
 .marker {
@@ -127,6 +129,7 @@ table{
     align-items: center;
   }
 }
+
 
 
 
