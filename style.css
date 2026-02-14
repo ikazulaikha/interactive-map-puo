@@ -18,9 +18,10 @@ h1 {
   border-radius: 12px;
 }
 
-.map-container { position: relative; 
-                width: 900px; /* size tetap di laptop */ 
-                height: auto; } 
+.map-container { 
+  position: relative; 
+  width: 900px; /* size tetap di laptop */ 
+  height: auto; } 
 
 .map { 
   width: 100%; 
@@ -124,6 +125,7 @@ table{
     align-items: center;
   }
 }
+
 
 
 
