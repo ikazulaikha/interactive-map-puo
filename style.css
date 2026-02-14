@@ -22,8 +22,6 @@ h1 {
   position: relative;
   width: 900px;   /* size tetap di laptop */
   height: 800px;  /* height tetap */
-
-  margin-left: -60px;   /* gerak kiri sikit */
 }
 
 .map {
@@ -106,8 +104,10 @@ table{
   flex-direction: row;   /* pastikan susunan kiri ke kanan */
   align-items: flex-start;
   gap: 40px;
-  justify-content: center;
+  justify-content: flex-start;
+   margin-left: 40px;  /* adjust ikut sedap mata */
 }
+
 
 .legend-table {
   height: fit-content;
@@ -127,6 +127,7 @@ table{
     align-items: center;
   }
 }
+
 
 
 
