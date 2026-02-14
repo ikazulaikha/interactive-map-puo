@@ -24,15 +24,10 @@ h1 {
   margin: 0 auto;
 }
 
-.map { 
-  width: 100%; 
-  height: auto; 
-  display: block; 
-  object-fit: cover; /* maintain map aspect ratio */ 
-  border-radius: 12px; 
-  border: 6px solid #5f2503; 
-  background: #fff; 
-  padding: 8px; 
+.map {
+  width: 900px;
+  height: 800px;
+  max-width: none ;
 }
 
 .marker {
@@ -126,6 +121,7 @@ table{
     align-items: center;
   }
 }
+
 
 
 
