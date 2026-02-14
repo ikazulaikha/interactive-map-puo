@@ -22,13 +22,16 @@ h1 {
                 width: 900px; /* size tetap di laptop */ 
                 height: auto; } 
 
-.map { width: 100%; 
-height: auto; diplay: block; 
-object-fit: cover; /* maintain map aspect ratio */ 
-border-radius: 12px; 
-border: 6px solid #5f2503; 
-background: #fff; 
-padding: 8px; }
+.map { 
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  object-fit: cover; /* maintain map aspect ratio */ 
+  border-radius: 12px; 
+  border: 6px solid #5f2503; 
+  background: #fff; 
+  padding: 8px; 
+}
 
 .marker {
   position: absolute;
@@ -121,13 +124,6 @@ table{
     align-items: center;
   }
 }
-
-
-
-
-
-
-
 
 
 
