@@ -23,7 +23,7 @@ h1 {
   width: 900px;   /* size tetap di laptop */
   height: 800px;  /* height tetap */
 
-  margin-left: -30px;   /* gerak kiri sikit */
+  margin-left: -60px;   /* gerak kiri sikit */
 }
 
 .map {
@@ -127,6 +127,7 @@ table{
     align-items: center;
   }
 }
+
 
 
 
