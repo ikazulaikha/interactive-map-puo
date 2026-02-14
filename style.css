@@ -101,12 +101,12 @@ table{
 
 .main-content {
   display: flex;
-  flex-direction: row;   /* pastikan susunan kiri ke kanan */
+  flex-direction: row;
   align-items: flex-start;
   gap: 40px;
-  justify-content: center;
+  justify-content: flex-start;   /* jangan center */
+  padding-left: 60px;            /* jarak dari tepi screen */
 }
-
 
 .legend-table {
   height: fit-content;
@@ -126,6 +126,7 @@ table{
     align-items: center;
   }
 }
+
 
 
 
