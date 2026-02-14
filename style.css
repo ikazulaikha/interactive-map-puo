@@ -104,7 +104,7 @@ table{
   flex-direction: row;   /* pastikan susunan kiri ke kanan */
   align-items: flex-start;
   gap: 40px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .legend-table {
@@ -125,6 +125,7 @@ table{
     align-items: center;
   }
 }
+
 
 
 
